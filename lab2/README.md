@@ -2,7 +2,7 @@
 #### В даній лабораторній роботі було використано мову програмування GoLang
 ---
 #### Реалізовано 5 алгоритмів сортування масиву:
-+ BubbleSort(arr []int)
++ BubbleSort(arr []int) -> (C, M uint)
 ```go
 func BubbleSort(arr []int) (uint, uint) {
 	var C, M uint
@@ -64,7 +64,7 @@ func selectionSort(arr []int, C, M *uint) {
 	}
 }
 ```
-+ InsertionSort(arr []int)
++ InsertionSort(arr []int) -> (C, M uint)
 ```go
 func InsertionSort(arr []int) (uint, uint) {
 	var C, M uint
@@ -126,7 +126,7 @@ func quickSort(arr []int, C, M *uint) {
 	quickSort(arr[basePointer:], C, M)
 }
 ```
-+ ShellSort(arr []int)
++ ShellSort(arr []int) -> (C, M uint)
 ```go
 func ShellSort(arr []int) (uint, uint) {
 	var C, M uint
@@ -176,14 +176,6 @@ func insertionStepSort(arr []int, step int, C, M *uint) {
 В індивідуальному варіанті необхідно порівняти алгоритми Selection sort і Quick sort, порахувати час виконання сортування і кількість переміщень та порівнянь. Для усереднених результатів було проведено по декілька тестів для кожного із запропанованих розмірів масиву.
 
 Отримані дані узагальнено в таблиці:
-
-<style>
-    table, th, td {
-        border: 1px solid black;   
-        border-collapse: collapse;
-        text-align: center;
-    }
-</style>
 
 <table>
         <tr>
